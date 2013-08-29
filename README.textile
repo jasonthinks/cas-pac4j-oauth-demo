@@ -8,7 +8,7 @@ h2. Quick start & test
 
 To start quickly, build the project :<pre><code>cd cas-pac4j-oauth-demo
 mvn clean install</code></pre>then <pre><code>cd cas-pac4j-oauth-client-demo/keys
-./import-key.sh</code></pre>and start the two web applications with jetty :<pre><code>cd cas-pac4j-oauth-client-demo
+./import-key.sh</code></pre>and start the two web applications with jetty :<pre><code>cd ..
 mvn jetty:run</code></pre>
 
 To test,
