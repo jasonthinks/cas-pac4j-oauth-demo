@@ -1,8 +1,8 @@
 h2. What is this project ?
 
 This project *cas-pac4j-oauth-demo* has been created to test the OAuth/OpendID/CAS support in *CAS server version >= 4.0.0*. It's composed of two modules :
-- the *cas-pac4j-oauth-client-demo* module is a CAS server which uses the OAuth/OpenID/CAS client mode : it acts as a client to delegate authentication to Facebook, Twitter... : "https://wiki.jasig.org/display/CASUM/OAuth+client+support+for+CAS+server+version+%3E%3D+4.0.0":https://wiki.jasig.org/display/CASUM/OAuth+client+support+for+CAS+server+version+%3E%3D+4.0.0
-- the *cas-pac4j-oauth-server-demo* module is a CAS server which uses the OAuth server mode : it plays the role of an OAuth server : "https://wiki.jasig.org/display/CASUM/OAuth+server+support":https://wiki.jasig.org/display/CASUM/OAuth+server+support.
+- the *cas-pac4j-oauth-client-demo* module is a CAS server which uses the OAuth/OpenID/CAS client mode : it acts as a client to delegate authentication to Facebook, Twitter... : "https://wiki.jasig.org/pages/viewpage.action?pageId=56164890":https://wiki.jasig.org/pages/viewpage.action?pageId=56164890
+- the *cas-pac4j-oauth-server-demo* module is a CAS server which uses the OAuth server mode : it plays the role of an OAuth server : "https://wiki.jasig.org/display/CASUM/Configuration+for+the+OAuth+server+support":https://wiki.jasig.org/display/CASUM/Configuration+for+the+OAuth+server+support.
 
 h2. Quick start & test
 
