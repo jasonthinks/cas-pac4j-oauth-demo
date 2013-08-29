@@ -65,12 +65,22 @@
                     <webApp>
                         <contextPath>/cas</contextPath>
                     </webApp>
+                    <connectors>
+                    	<connector implementation="org.eclipse.jetty.server.ssl.SslSocketConnector">
+							<port>8443</port>
+							<maxIdleTime>60000</maxIdleTime>
+							<keystore>${project.basedir}/keys/keystore.jks</keystore>
+							<password>password</password>
+							<keyPassword>password</keyPassword>
+						</connector>
+                    </connectors>
                     <contextHandlers>
                         <contextHandler implementation="org.eclipse.jetty.webapp.WebAppContext">
                             <war>${basedir}/../cas-pac4j-oauth-server-demo/target/cas-pac4j-oauth-server-demo.war</war>
                             <contextPath>/cas2</contextPath>
                         </contextHandler>
                     </contextHandlers>
+                    
                 </configuration>
             </plugin>
         </plugins>

@@ -1,0 +1,1 @@
+keytool -import -keystore %JAVA_HOME%\jre\lib\security\cacerts -file server.crt -alias selfsigned

@@ -7,16 +7,17 @@ This project *cas-pac4j-oauth-demo* has been created to test the OAuth/OpendID/C
 h2. Quick start & test
 
 To start quickly, build the project :<pre><code>cd cas-pac4j-oauth-demo
-mvn clean install</code></pre>and start the two web applications with jetty :<pre><code>cd cas-pac4j-oauth-client-demo
+mvn clean install</code></pre>then <pre><code>cd cas-pac4j-oauth-client-demo/keys
+./import-key.sh</code></pre>and start the two web applications with jetty :<pre><code>cd cas-pac4j-oauth-client-demo
 mvn jetty:run</code></pre>
 
 To test,
-- call the "http://localhost:8080/cas":http://localhost:8080/cas url and click on "Authenticate with ..." (at CAS server in OAuth client mode)
-- authenticate at your favorite provider (Facebook, Twitter...) or at the OAuth wrapped CAS server (same password as login, url : _http://localhost:8080/cas2_)
+- call the "https://localhost:8443/cas":https://localhost:8443/cas url and click on "Authenticate with ..." (at CAS server in OAuth client mode)
+- authenticate at your favorite provider (Facebook, Twitter...) or at the OAuth wrapped CAS server (same password as login, url : _https://localhost:8443/cas2_)
 - be redirected to the first CAS server, being successfully authenticated.
 
 h2. Manual deployment
 
 You can also deploy manually these two web applications in your favorite web applications server :
-- cas-pac4j-oauth-client-demo on http://localhost:8080/cas
-- cas-pac4j-oauth-server-demo on http://localhost:8080/cas2
+- cas-pac4j-oauth-client-demo on https://localhost:8443/cas
+- cas-pac4j-oauth-server-demo on https://localhost:8443/cas2

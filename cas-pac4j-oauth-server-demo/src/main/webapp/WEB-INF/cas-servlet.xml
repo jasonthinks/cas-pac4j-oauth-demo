@@ -105,7 +105,7 @@
   <bean
     id="oauth20WrapperController"
     class="org.jasig.cas.support.oauth.web.OAuth20WrapperController"
-    p:loginUrl="http://localhost:8080/cas2/login"
+    p:loginUrl="https://localhost:8443/cas2/login"
     p:servicesManager-ref="servicesManager"
     p:ticketRegistry-ref="ticketRegistry"
     p:timeout="7200" />
